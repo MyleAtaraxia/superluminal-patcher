@@ -19,7 +19,7 @@ Exit codes: `0` ok, `1` bad args, `2` IO/not elevated, `3` unrecognised image.
 - `Profiler.exe` only. `SuperluminalCmd.exe` and the collection service are untouched.
 - Auto-update overwrites the patch. Re-run afterwards or block in the hosts file.
 - Keep the free-trial `activation.dat`, without it parts of the license UI break.
-- First patch writes `Profiler.exe.orig` (even on `--dry-run`);
+- First patch writes `Profiler.exe.orig` (even on `--dry-run`).
 
 Signature-based, not offset-based, so minor layout shifts survive and unknown builds abort at `3`.
 
@@ -39,4 +39,4 @@ Zig 0.16.0:
 zig build-exe -O ReleaseSmall -target x86_64-windows-gnu --name slpatch slpatch.zig
 ```
 
-made for research purposes; if you enjoy Superliminal buy a license to support them :)
+made for research purposes; if you enjoy Superluminal buy a license to support them :)
